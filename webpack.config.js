@@ -19,5 +19,10 @@ module.exports = {
       },
     ],
   },
-  plugins: [new VueLoaderPlugin()],
+    plugins: [new VueLoaderPlugin()],
+    resolve: {
+        alias: {
+            vue: 'vue/dist/vue.esm-bundler.js'
+        },
+    },
 }
